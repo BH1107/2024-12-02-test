@@ -1,4 +1,5 @@
 import unittest
+import logout
 
 def add_numbers(a, b):
   return a + b;
@@ -9,6 +10,7 @@ class TestModule(unittest.TestCase):
     self.assertEqual(add_numbers(2,5),7)
     self.assertEqual(add_numbers(1,-1),0)
     self.assertEqual(add_numbers(2,2),5)
+    self.assertEqual(logout.logout(),0)
 
 if __name__ == '__main__':
   unittest.main()
